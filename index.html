@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Tab <3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="blackout" style="display: none;"></div>
+    <div id="feedbackOverlay" style="display: none">
+        
+    </div>
+    <div id="settingsOverlay" style="display: none;">
+        <div id="settingsNav">
+            <div id="exit"></div>
+            <p id="settingWords">SETTINGS</p>
+        </div>
+        <div id="adjustableSettings">
+            <button class="option" id="saveOption" onclick="save()">Save Current Background?</button>
+            <button class="option" id="clearOption">Clear Current Saved Background?</button>
+            <button class="option" id="feedback">Feedback?</button>
+        </div>
+    </div>
+    <canvas id="backgroundCanvas" width="100vw" height="100vh" style="width: 100vw; height: 100vh;"></canvas>
+    <input type="text" id="search" name="search" placeholder="What are you looking for? <3" autocomplete="off">
+    <div id="footer"><div id="settings"></div><p>Made By <a id="linkToWebsite" href="https://uniquelyelite.github.io/home/">UniquelyElite</a></p></div>
+</body>
+<script src="index.js"></script>
+</html>

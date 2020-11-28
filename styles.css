@@ -1,0 +1,165 @@
+@media only screen and (orientation: landscape) {
+    ::placeholder {
+        color: white;
+    }
+    body {
+        background: linear-gradient(to bottom, darkred, black, darkred);
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    * {
+        cursor: url(heart.png), crosshair;
+    }
+    .option {
+        border-radius: 5vh;
+        font-size: 4vh;
+        width: 75%;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+    #adjustableSettings {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #blackout {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        z-index: 3;
+    }
+    #settingsNav {
+        display: flex;
+        flex-direction: row;
+    }
+    #settingWords {
+        color: white;
+        font-size: 5vh;
+        margin-left: 20vh;
+        margin-top: 6vh;
+    }
+    #exit {
+        margin-top: 5vh;
+        margin-left: 5vh;
+        background-image: url(back.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(90vh/10);
+        height: calc(90vh/10);
+    }
+    #settingsOverlay {
+        border-radius: 10vh;
+        position: absolute;
+        align-self: center;
+        width: 90vh;
+        height: 90vh;
+        background-color: darkred;
+        z-index: 4;
+    }
+    #search,
+    #search:active {
+        width: 95vh;
+        height: auto;
+        overflow: visible;
+        color: white;
+        background-color: darkred;
+        font-size: 5vh;
+        border-radius: 10vh;
+        border-width: 1%;
+        border-style: solid;
+        text-align: center;
+        outline: none;
+        border-color: darkviolet;
+        z-index: 2;
+    }
+
+    #backgroundCanvas {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        z-index: 1;
+    }
+    #footer {
+        font-size: 2vh;
+        z-index: 2;
+        position: absolute;
+        bottom: 0;
+        align-self: flex-start;
+        margin-left: 1vw;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    #linkToWebsite {
+        color: white;
+    }
+    #settings {
+        background-image: url(gear.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 5vh;
+        width: 5vh;
+        margin-right: 1vw;
+    }
+}
+@media only screen and (orientation: portrait) {
+    ::placeholder {
+        color: white;
+    }
+    #searchArea {
+        z-index: 2;
+    }
+    body {
+        background: linear-gradient(to bottom, darkred, black, darkred);
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    * {
+        cursor: crosshair;
+    }
+
+    #search,
+    #search:active {
+        width: 75vw;
+        height: auto;
+        overflow: visible;
+        color: white;
+        background-color: darkred;
+        font-size: 5vw;
+        border-radius: 100px;
+        border-width: 1%;
+        text-align: center;
+        outline: none;
+        border-color: darkviolet;
+    }
+    #backgroundCanvas {
+        position: absolute;
+        margin: 0;
+        z-index: 1;
+    }
+    #footer {
+        font-size: 3vh;
+        z-index: 2;
+        position: absolute;
+        bottom: 0;
+        margin-left: 10px;
+        color: white;
+    }
+    #linkToWebsite {
+        color: white;
+    }
+}

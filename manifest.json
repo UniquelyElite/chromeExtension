@@ -1,0 +1,11 @@
+{
+    "manifest_version": 2,
+   
+    "name": "G.A.M.F.A.",
+    "version": "0.1.0",
+    "description": "Makes the new tab have a canvas like background that you can put hearts on, gives it a Valentines vibe almost",
+    "permissions": ["activeTab", "storage"],
+    "chrome_url_overrides" : {
+      "newtab": "index.html"
+    }
+  }
